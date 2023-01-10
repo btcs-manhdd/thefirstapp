@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/show'
   get "/" , to: "static_pages#home"
   get "/books/new", to: "books#new"
   get "/articles", to: "articles#index"
